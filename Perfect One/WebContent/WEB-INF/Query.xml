@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Queries>
+<query id="insert_users">
+        <![CDATA[
+          	insert into users (fullName, Email, userName, password, Role) 
+          	values (?, ?, ?, ? ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular payment by id Query -->
+	<query id="users_by_id">
+         <![CDATA[        
+            select * from users where users.SINo = ?
+        ]]>
+	</query>
+
+	<!-- Select all payment -->
+	<query id="all_users">
+         <![CDATA[        
+            select * from users
+        ]]>
+	</query>
+
+	<!-- Delete a particular payment by id Query -->
+	<query id="remove_users">
+         <![CDATA[        
+            delete from users where users.SINo = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular payment by id Query -->
+	<query id="update_users">
+         <![CDATA[        
+            update users  
+            set fullName = ?, Email = ?, userName = ?, password = ?, Role = ?
+            where SINo = ?
+        ]]>
+	</query>
+	
+		<!-- Get IDs Query -->
+	<query id="users_ids">
+         <![CDATA[        
+            select a.SINo from users as a
+        ]]>
+	</query>
+</Queries>

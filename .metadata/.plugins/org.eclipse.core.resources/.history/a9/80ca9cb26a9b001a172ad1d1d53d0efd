@@ -1,0 +1,170 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@page import="com.mvc.dao.IUserService"%>
+<%@page import="com.mvc.dao.UserServiceImpl"%>
+<%@page import="com.mvc.bean.User"%>
+<%@page import="com.mvc.controller.GetIdUserServlet"%>
+<%@page import="com.mvc.controller.UpdateUserServlet"%>
+<%@page import="java.util.ArrayList" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Perfect One || Update User</title>
+
+<link rel="icon" href="img/favicon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- animate CSS -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- owl carousel CSS -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<!-- themify CSS -->
+<link rel="stylesheet" href="css/themify-icons.css">
+<!-- flaticon CSS -->
+<link rel="stylesheet" href="css/flaticon.css">
+<!-- font awesome CSS -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- swiper CSS -->
+<link rel="stylesheet" href="css/swiper.min.css">
+<!-- style CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/registration.css">
+
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+        <div align="center">
+        
+        
+				  <%
+        
+        	User usr = ( User ) request.getAttribute("getCid");
+        
+        	if( usr != null ){
+        		      	
+               
+        
+        %>
+        
+		
+			<form class="form" role="form" action="UpdateUserServlet" method="post"  onsubmit="return validateForm()">
+			<div class="container register-form">
+			<div class="form">
+				
+				<div class="note">
+                    <p style="color:white;font-size:25pt;">Edit User Details</p>
+                </div>
+                
+                <div class="form-content">
+                      <div class="input-group">
+                        <input type="text"  size="45"
+                			 class="form-control" name="updateId" placeholder="User ID..." value="<%=usr.getId()%>" disabled/>
+                      </div>
+                    </div>
+                    <%-- <div class="form-group" >
+                      <div class="input-group">
+                      <input type="hidden"  size="45"
+                			 class="form-control" name="updateId" placeholder="User ID..." value="<%=usr.getId()%>"/>
+                      </div>
+                    </div> --%>
+			
+   					<div class="form-group" >
+                      <div class="input-group">
+                        <input type="text"  size="45"
+                			 class="form-control" placeholder="Full Name..." value="<%=usr.getFullName()%>" name="updateName"/>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" size="45"
+                			 placeholder="Email..." value="<%=usr.getEmail()%>"class="form-control" name="updateEmail"/>
+                      </div>
+                    </div>
+                   
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" size="45"
+                			placeholder="User Name..." value="<%=usr.getUserName()%>"class="form-control" name="updateUserName"/>
+                      </div>
+                    </div>
+                    
+                     <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" size="45"
+                			 placeholder="Password..." value="<%=usr.getPassword()%>" class="form-control" name="updatePassword"/>
+                      </div>
+                    </div>
+                    
+                     <div class="form-group">
+                      <div class="input-group">
+                        <input type="text"  size="45"
+                			 placeholder="Role..."  value="<%=usr.getRole()%>" class="form-control" name="updateRole" disabled/>
+                      </div>
+                    </div>
+			
+
+           <div class="card-footer justify-content-center">
+            <div class="text-center" >
+                
+                     <button  type="submit" value="Save" class="btn btn-primary" >Update User
+                     </button>
+                     <button  type="button" class="btn btn-primary"  onclick="nomsg()" >Clear
+                     </button>
+        	   </div>
+        	   </div>
+         	 </div>
+         	 </div>  
+           </form>
+           <%} %> 
+        
+       	 </div>
+       	 
+       	 	<footer class="copyright_part">
+		<div class="container">
+			<div class="row align-items-center">
+				<p class="footer-text m-0 col-lg-8 col-md-12">
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved | Perfectone.lk
+				</p>
+				<div
+					class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+					<a href="#"><i class="ti-facebook"></i></a> <a href="#"> <i
+						class="ti-twitter"></i>
+					</a> <a href="#"><i class="ti-instagram"></i></a> <a href="#"><i
+						class="ti-skype"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer part end-->
+
+	<!-- jquery plugins here-->
+	<!-- jquery -->
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<!-- popper js -->
+	<script src="js/popper.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- aos js -->
+	<script src="js/aos.js"></script>
+	<!-- easing js -->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- swiper js -->
+	<script src="js/masonry.pkgd.js"></script>
+	<!-- particles js -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- carousel js -->
+	<script src="js/swiper.min.js"></script>
+	<!-- custom js -->
+	<script src="js/custom.js"></script>
+</body>
+</html>

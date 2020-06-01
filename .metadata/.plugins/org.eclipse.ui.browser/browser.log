@@ -1,0 +1,58 @@
+
+May 04, 2020 18:54:05.45 NEW SESSION
+May 04, 2020 18:54:05.45 [7388:6580:0504/185405.455:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 04, 2020 18:54:06.27 [7388:3704:0504/185406.271:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 04, 2020 18:54:14.35 [7388:13928:0504/185414.358:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 04, 2020 18:54:38.75 [7388:13928:0504/185438.753:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 04, 2020 18:55:34.50 [7388:13928:0504/185534.509:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 04, 2020 18:57:24.46 [7388:13928:0504/185724.466:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+May 05, 2020 12:21:03.62 NEW SESSION
+May 05, 2020 12:21:03.62 [2492:40388:0505/122103.620:ERROR:cache_util_win.cc(21)] Unable to move the cache: Access is denied. (0x5)
+May 05, 2020 12:21:04.11 [2492:40388:0505/122103.621:ERROR:cache_util.cc(138)] Unable to move cache folder C:\Users\udith\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\udith\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_001
+May 05, 2020 12:21:04.13 [2492:40388:0505/122103.621:ERROR:disk_cache.cc(184)] Unable to create cache
+May 05, 2020 12:21:04.15 [2492:40388:0505/122103.621:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+May 05, 2020 12:21:08.33 [2492:40388:0505/122108.332:ERROR:cache_util_win.cc(21)] Unable to move the cache: Access is denied. (0x5)
+May 05, 2020 12:21:08.34 [2492:40388:0505/122108.332:ERROR:cache_util.cc(138)] Unable to move cache folder C:\Users\udith\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\udith\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_001
+May 05, 2020 12:21:08.34 [2492:40388:0505/122108.332:ERROR:disk_cache.cc(184)] Unable to create cache
+May 05, 2020 12:21:08.35 [2492:40388:0505/122108.332:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+May 05, 2020 12:21:09.22 Opening in existing browser session.
+May 05, 2020 19:09:14.36 [37652:8368:0505/190914.333:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 05, 2020 19:09:15.16 [37652:11044:0505/190915.166:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 05, 2020 19:09:23.31 [37652:10392:0505/190923.315:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:09:51.97 [37652:10392:0505/190951.973:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:10:46.00 [37652:10392:0505/191046.002:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:12:21.97 [37652:10392:0505/191221.972:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:15:04.05 [37652:10392:0505/191504.050:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:22:11.95 [37652:10392:0505/192211.952:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:32:11.95 [37652:10392:0505/193211.955:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 05, 2020 19:42:11.95 [37652:10392:0505/194211.958:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+May 10, 2020 13:50:45.71 NEW SESSION
+May 10, 2020 13:50:45.71 [13796:15284:0510/135045.372:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 10, 2020 13:50:46.48 [13796:17032:0510/135045.375:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+
+May 10, 2020 19:53:10.40 NEW SESSION
+May 10, 2020 19:53:10.40 [10624:10632:0510/195310.285:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 10, 2020 19:53:10.69 [10624:18392:0510/195310.696:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 11, 2020 18:16:22.12 NEW SESSION
+May 11, 2020 18:16:22.12 [55692:11832:0511/181622.120:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 18:16:22.61 [55692:12432:0511/181622.618:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 11, 2020 18:16:58.84 [42576:59240:0511/181658.841:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 18:16:59.35 [42576:47252:0511/181659.350:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 11, 2020 18:17:23.44 [47732:58460:0511/181723.442:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 18:17:23.93 [47732:58528:0511/181723.931:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+
+May 11, 2020 20:57:08.28 NEW SESSION
+May 11, 2020 20:57:08.28 [17248:24784:0511/205708.279:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 20:57:09.08 [17248:12596:0511/205709.081:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+
+May 12, 2020 13:31:49.63 NEW SESSION
+May 12, 2020 13:31:49.63 [1296:29308:0512/133149.551:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 13:31:50.23 [1296:63312:0512/133150.238:ERROR:data_pack.cc(120)] Could not open pak file for writing: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+May 12, 2020 13:31:57.05 [1296:18568:0512/133157.059:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 12, 2020 13:32:23.42 [1296:18568:0512/133223.420:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 12, 2020 13:33:04.07 [1296:18568:0512/133304.079:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 12, 2020 13:34:59.89 [1296:18568:0512/133459.896:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 12, 2020 13:38:49.17 [1296:18568:0512/133849.171:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106

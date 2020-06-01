@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Study Materials\Year 02\Semester 02\ITP\User Management\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1656267889.index
+3243116431.index
+2213244697.index
+2144097090.index
+238248706.index
+2318462159.index

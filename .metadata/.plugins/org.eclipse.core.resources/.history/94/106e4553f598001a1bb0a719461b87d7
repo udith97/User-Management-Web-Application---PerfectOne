@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>EDIT PROFILE</h3>
+
+	<form class="form" action="GetIdUserServlet" method="post">
+
+
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" disabled class="form-control"
+					placeholder="User Id" name="Id"
+					value="<%=session.getAttribute("SLNo")%>">
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+
+
+				<input type="hidden" class="form-control" placeholder="User Id"
+					name="Id" value="<%=session.getAttribute("SLNo")%>">
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Full Name."
+					name="fullName" value="<%=session.getAttribute("fullName")%>" />
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" placeholder="Email" class="form-control"
+					name="Email" value="<%=session.getAttribute("Email")%> " />
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="User Name"
+					name="userName" value="<%=session.getAttribute("userName")%>">
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" placeholder="Password" class="form-control"
+					name="password" value="<%=session.getAttribute("password")%>" />
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" placeholder="Role" class="form-control"
+					name="Role" value="<%=session.getAttribute("Role")%>" />
+				<td class="td-actions text-right">
+			</div>
+		</div>
+
+
+		<div class="text-center">
+			<input type="hidden" name="SLNo" class="form-control"
+				value="<%=session.getAttribute("SLNo")%> " />
+
+			<button class="btn btn-primary btn-round" type="submit">Save
+				Changes</button>
+			<br> <br>
+		</div>
+
+	</form>
+	<!--                                     <form> 
+										<div class="text-center">
+                                          <a href="#pablo" class="btn btn-primary btn-round">DELETE ACCOUNT</a> <br><br>
+                                        </div>
+
+                                      </form>    -->
+
+
+	<form action="DeleteCustomerAccountServlet" method="post">
+
+		<div class="text-center">
+			<input type="hidden" name="deleteValueAcc"
+				value="<%=session.getAttribute("cId")%>">
+
+			<button type="submit" class="btn btn-primary btn-round"
+				name="btnDelete" value="submit">DELETE ACCOUNT</button>
+			<br> <br>
+		</div>
+	</form>
+
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>

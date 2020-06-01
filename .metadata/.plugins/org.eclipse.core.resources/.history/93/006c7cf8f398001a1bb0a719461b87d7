@@ -1,0 +1,159 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">face</i>
+				</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Full Name."
+				name="fullName" value="<%=session.getAttribute("fullName")%>" />
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">face</i>
+				</span>
+			</div>
+			<input type="text" placeholder="Last Name..." class="form-control"
+				name="lname" value="<%=session.getAttribute("lname")%> " />
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">mail</i>
+				</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Email..."
+				name="email" value="<%=session.getAttribute("email")%>">
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">location_on</i>
+				</span>
+			</div>
+			<input type="text" placeholder="Address..." class="form-control"
+				name="address" value="<%=session.getAttribute("address")%>" />
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">phone</i>
+				</span>
+			</div>
+			<input type="text" placeholder="Contact Number..."
+				class="form-control" name="contactNumber"
+				value="<%=session.getAttribute("contactNumber")%>" />
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="material-icons">lock</i>
+				</span>
+			</div>
+			<input type="password" placeholder="Password..." class="form-control"
+				name="password" value="<%=session.getAttribute("password")%>" />
+			<td class="td-actions text-right">
+		</div>
+	</div>
+
+
+	<input type="hidden" placeholder="Confirm Password..."
+		class="form-control" name="confirmPassword"
+		value="<%=session.getAttribute("confirmPassword")%>" />
+	<td class="td-actions text-right">
+
+
+
+		<div class="form-group">
+			<div class="input-group">
+
+				<div class="input-group-prepend">
+					<span class="input-group-text"> <i class="material-icons">lock_outline</i>
+						<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br> <a href="#change password" data-toggle="modal"
+						data-target="#loginModal"> Change Password </a>
+					</span>
+				</div>
+
+			</div>
+		</div> <!-- <div class="text-center">
+                                          <a href="#pablo" class="btn btn-primary btn-round">SAVE CHANGES</a> <br><br>
+                                        </div>  -->
+
+
+		<div class="text-center">
+			<input type="hidden" name="cId" class="form-control"
+				value="<%=session.getAttribute("cId")%> " />
+
+			<button class="btn btn-primary btn-round" type="submit">Save
+				Changes</button>
+			<br>
+			<br>
+		</div>
+
+		</form> <!--                                     <form> 
+										<div class="text-center">
+                                          <a href="#pablo" class="btn btn-primary btn-round">DELETE ACCOUNT</a> <br><br>
+                                        </div>
+
+                                      </form>    -->
+
+
+		<form action="DeleteCustomerAccountServlet" method="post">
+
+			<div class="text-center">
+				<input type="hidden" name="deleteValueAcc"
+					value="<%=session.getAttribute("cId")%>">
+
+				<button type="submit" class="btn btn-primary btn-round"
+					name="btnDelete" value="submit">DELETE ACCOUNT</button>
+				<br>
+				<br>
+			</div>
+		</form>
+
+
+
+
+
+
+
+
+		</div>
+</body>
+</html>
